@@ -2,10 +2,11 @@
 
 using namespace std;
 
+typedef unsigned long long u64;
 
-unsigned long long tidy(unsigned long long n)
+u64 tidy(u64 n)
 {
-	unsigned long long l = 1111111111111111111, t = 0;
+	u64 l = 1111111111111111111, t = 0;
 	int c = 0;
 
 	while (l) {
@@ -25,7 +26,7 @@ int main()
 	int t;
 	cin >> t;
 
-	unsigned long long n;
+	u64 n;
 	for (int c = 1; c <= t; c++) {
 		cin >> n;
 		printf("Case #%d: %llu\n", c, tidy(n));
